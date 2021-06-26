@@ -19,7 +19,9 @@ public class AppConfig implements WebMvcConfigurer {
 
         registry.addMapping("/**")
                 .allowedOrigins(
-                        "http://localhost:3000/"
+                        "http://localhost:3000/",
+                		"https://bdprojetoreact.herokuapp.com/",
+                		"https://siteprojetoreact.herokuapp.com/"
                 		)
                 .allowedMethods("*")
                 .allowCredentials(true);
